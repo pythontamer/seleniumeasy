@@ -1,4 +1,6 @@
 from selenium.webdriver.common.by import By
 
+
 class ConfirmPage:
-	pass
+	def __init__(self, browser):
+		self.browser = browser

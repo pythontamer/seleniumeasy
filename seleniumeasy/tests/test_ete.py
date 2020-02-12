@@ -18,3 +18,7 @@ class NewTest(BaseClass):
 			if card_text == 'Blackberry':
 				checkout_page.get_card_footers()[i].click()
 
+		checkout_page.get_checkout_items().click()
+
+		self.verify_link_presence("India")
+
